@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+bash+c+cpp+ruby+css-extras+elixir+git+haskell+http+j+java+json+latex+less+lua+makefile+markdown+matlab+objectivec+ocaml+python+scala+scheme+sql+typescript+vim+yaml&plugins=line-highlight+line-numbers+file-highlight+show-language+highlight-keywords+previewer-base+previewer-color+previewer-gradient+previewer-easing+command-line */
+/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+apacheconf+bash+batch+c+brainfuck+csharp+cpp+coffeescript+ruby+css-extras+elixir+erlang+fsharp+groovy+haml+haskell+http+j+java+json+julia+latex+less+lua+makefile+markdown+objectivec+prolog+properties+protobuf+puppet+python+r+rust+sass+scala+scheme+sql+swift+textile+typescript+vim+wiki+yaml&plugins=line-highlight+line-numbers+show-invisibles+autolinker+file-highlight+show-language+jsonp-highlight+highlight-keywords+remove-initial-line-feed+previewer-base+previewer-color+previewer-gradient+previewer-easing+previewer-time+unescaped-markup+command-line+normalize-whitespace+keep-markup+data-uri-highlight */
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
@@ -306,6 +306,42 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
+.token.tab:not(:empty),
+.token.cr,
+.token.lf,
+.token.space {
+	position: relative;
+}
+
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before,
+.token.space:before {
+	color: hsl(24, 20%, 85%);
+	position: absolute;
+}
+
+.token.tab:not(:empty):before {
+    content: '\21E5';
+}
+
+.token.cr:before {
+    content: '\240D';
+}
+
+.token.crlf:before {
+    content: '\240D\240A';
+}
+.token.lf:before {
+    content: '\240A';
+}
+
+.token.space:before {
+	content: '\00B7';
+}
+.token a {
+	color: inherit;
+}
 div.prism-show-language {
 	position: relative;
 }
@@ -455,6 +491,105 @@ div.prism-show-language > div.prism-show-language-label {
 	stroke-opacity: 0.5;
 	stroke-width: 2;
 }
+@-webkit-keyframes prism-previewer-time {
+	0% {
+		stroke-dasharray: 0, 500;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 100, 500;
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dasharray: 0, 500;
+		stroke-dashoffset: -100;
+	}
+}
+
+@-o-keyframes prism-previewer-time {
+	0% {
+		stroke-dasharray: 0, 500;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 100, 500;
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dasharray: 0, 500;
+		stroke-dashoffset: -100;
+	}
+}
+
+@-moz-keyframes prism-previewer-time {
+	0% {
+		stroke-dasharray: 0, 500;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 100, 500;
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dasharray: 0, 500;
+		stroke-dashoffset: -100;
+	}
+}
+
+@keyframes prism-previewer-time {
+	0% {
+		stroke-dasharray: 0, 500;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 100, 500;
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dasharray: 0, 500;
+		stroke-dashoffset: -100;
+	}
+}
+
+.prism-previewer-time:before {
+	border-radius: 50%;
+	background: #fff;
+}
+.prism-previewer-time:after {
+	margin-top: 4px;
+}
+.prism-previewer-time svg {
+	width: 32px;
+	height: 32px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+.prism-previewer-time circle {
+	fill: transparent;
+	stroke: hsl(200, 10%, 20%);
+	stroke-opacity: 0.9;
+	stroke-width: 32;
+	stroke-dasharray: 0, 500;
+	stroke-dashoffset: 0;
+	-webkit-animation: prism-previewer-time linear infinite 3s;
+	-moz-animation: prism-previewer-time linear infinite 3s;
+	-o-animation: prism-previewer-time linear infinite 3s;
+	animation: prism-previewer-time linear infinite 3s;
+}
+/* Fallback, in case JS does not run, to ensure the code is at least visible */
+.lang-markup script[type='text/plain'],
+.language-markup script[type='text/plain'],
+script[type='text/plain'].lang-markup,
+script[type='text/plain'].language-markup {
+	display: block;
+	font: 100% Consolas, Monaco, monospace;
+	white-space: pre;
+	overflow: auto;
+}
+
 .command-line-prompt {
 	border-right: 1px solid #999;
 	display: block;
