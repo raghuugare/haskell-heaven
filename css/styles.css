@@ -2,11 +2,12 @@
 body {
 		font-family: Optima, Helvetica Neue, sans-serif;
 		margin: 0 auto;
+		padding: 0 10px;
 		max-width: 50em;
 }
 
 body {
-		color: #a67f59;
+		color: #555;
 }
 
 h1,
