@@ -4,8 +4,14 @@ body {
 		margin: 0 auto;
 		max-width: 50em;
 }
-							
 
+body {
+		color: #a67f59;
+}
 
-
+h1,
+h2,
+strong {
+  color: #333;
+}
 
