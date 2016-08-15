@@ -17,7 +17,7 @@ body {
 }
 
 body {
-		color: #555;
+		color: #566b78;
 }
 
 h1,
@@ -33,16 +33,12 @@ h2 {
 
 code,
 pre {
-  background: #eee;
-}
-
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
+  background: #f5f7f9;
+  color: #a7adba;
 }
 
 pre {
-  padding: 1em;
+  border-left: 2px solid #69c;
 }
 
 a {
