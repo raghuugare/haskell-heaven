@@ -1,4 +1,9 @@
 /* Our styles */
+
+/* * { */
+/* 		outline: 1px dotted red; */
+/* } */
+
 body {
 		font-family: Optima, Helvetica Neue, sans-serif;
 		margin: 0 auto;
