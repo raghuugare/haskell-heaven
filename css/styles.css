@@ -5,7 +5,6 @@
 /* } */
 
 main {
-		font-family: Optima, Helvetica Neue, sans-serif;
 		margin: 0 auto;
 		padding: 0 10px;
 		max-width: 50em;
@@ -17,6 +16,7 @@ body {
 }
 
 body {
+		font-family: Optima, Helvetica Neue, sans-serif;
 		color: #566b78;
 }
 
