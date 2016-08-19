@@ -12,7 +12,7 @@ main {
 
 body {
 		line-height: 1.5;
-		padding: 4em 1em; 
+		padding: 4em 1em;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 h1,
 h2,
 strong {
-  color: #333;
+		color: #333;
 }
 
 h2 {
@@ -33,53 +33,53 @@ h2 {
 
 code,
 pre {
-  background: #f5f7f9;
-  color: #a7adba;
+		background: #f5f7f9;
+		color: #a7adba;
 }
 
 pre {
-  border-left: 2px solid #69c;
+		border-left: 2px solid #69c;
 }
 
 a {
-  color: #e81c4f;
+		color: #e81c4f;
 }
 
 header {
-  background-color: #fafcc1;
-  /* background-image: url("header_image.png/jpg"); */
-  background-position: top top;  
-  background-repeat: no-repeat;
-  background-size: cover;
-  line-height: 1.0;
-  padding: 10vw 2em;
-  text-align: center;
+		background-color: #fafcc1;
+		/* background-image: url("header_image.png/jpg"); */
+		background-position: top top;  
+		background-repeat: no-repeat;
+		background-size: cover;
+		line-height: 1.0;
+		padding: 4vw 2em;
+		text-align: center;
 }
 
 header h1 {
-  color: red;
-  font-size: 4.5em;
-	font-family: Optima, sans-serif;
-  font-weight: 300;
+		color: red;
+		font-size: 4.5em;
+		font-family: Optima, sans-serif;
+		font-weight: 300;
 }
 
 header a {
-	border: 1px solid blue; /* #e81c4f;*/
-  border-radius: 5px; /*290486px;*/
-  color: rebeccapurple;
-  font-size: 0.6em;
-  letter-spacing: 0.2em;
-  padding: 1em 2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: none 200ms ease-out;
-  transition-property: color, background;
+		border: 1px solid blue;
+		border-radius: 5px; 
+		color: rebeccapurple;
+		font-size: 0.6em;
+		letter-spacing: 0.2em;
+		padding: 1em 2em;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: none 200ms ease-out;
+		transition-property: color, background;
 }
 
 header a:hover {
-  background:  rebeccapurple;
-  color: yellow;
-	border: 2px solid yellow;
+		background:  rebeccapurple;
+		color: yellow;
+		border: 2px solid yellow;
 }
 
 header p {
