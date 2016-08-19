@@ -85,3 +85,8 @@ header a:hover {
 header p {
 		font-size: 1.5em;
 }
+
+.math {
+		font-size: 1.5em;
+		color: purple;
+}
