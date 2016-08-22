@@ -91,3 +91,13 @@ header p {
 		font-size: 1.25em;
 		color: rebeccapurple;
 }
+
+blockquote {
+		padding: 10px;
+		border-radius: 0px 50px 50px 0px;
+		border-left: 5px solid firebrick;
+		background: wheat;
+		font-family: Lora, Serif;
+		font-size: 1.1em;
+}
+										 
