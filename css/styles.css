@@ -105,12 +105,10 @@ blockquote {
 sup {
 		font-size: 0.6em;
 		padding: 5px;
-		font-family: PT Mono;
-		
 }
 
 section.footnotes {
 		font-size: 1.4em;
 		font-weight: medium;
-		color: darkturquoise;
+		color: mediumseagreen;
 }
