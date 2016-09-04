@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<!-- Bootstrap -->
-		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-		<link href="css/prism.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Athiti|PT+Mono" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		<title>Haskell Heaven!</title>
-	</head>
-	<body>
-		<main>
-			<h3><a href="index.html">Back to home</a></h3>
-			
-			<h2>Intro</h2>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Athiti|PT+Mono" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <title>Haskell Heaven!</title>
+  </head>
+  <body>
+    <main>
+      <h3><a href="index.html">Back to home</a></h3>
+      
+      <h2>Intro</h2>
 
-			<p>
-				Hello dear friend(s)!
-			</p>
+      <p>
+	Hello dear friend(s)!
+      </p>
 
-			<p>
-				Welcome!
-			</p>
-			
-			<p>
-				I started this to share some of my little nuggets of learning on the way to Haskell heaven--sort of like a local travel-guide, recommending the best eateries, tea shops, etc.
-			</p>
+      <p>
+	Welcome!
+      </p>
+      
+      <p>
+	I started this to share some of my little nuggets of learning on the way to Haskell heaven--sort of like a local travel-guide, recommending the best eateries, tea shops, etc.
+      </p>
 
-			<p>
-				Needless to say, there are tons of various pieces of useful info about <strong><a href="https://www.haskell.org" target="_blank">Haskell</a></strong>, its awesome features, community & eco-system on the internet. (Check out the <a href="references.html" target="_blank">References</a> page if you want that.)
-			</p>
+      <p>
+	Needless to say, there are tons of various pieces of useful info about <strong><a href="https://www.haskell.org" target="_blank">Haskell</a></strong>, its awesome features, community & eco-system on the internet. (Check out the <a href="references.html" target="_blank">References</a> page if you want that.)
+      </p>
 
-			<p>
-				But what I have seen to be lacking among students intending to learn Functional Programming with or without Haskell is a deeper appreciation &amp; understanding of the core concepts on top of which the whole realm of Functional Programming (of which Haskell is a torch-bearer!) is built, namely the concept of <em>functions, types,</em> and how they are beautifully represented by Haskell in their purest forms. Knowing these concepts properly leads one to experience <strong>Aha!</strong> moments and such sheer joy! After all, our lives should be filled with such Joys & Thrills of discovery!
-			</p>
+      <p>
+	But what I have seen to be lacking among students intending to learn Functional Programming with or without Haskell is a deeper appreciation &amp; understanding of the core concepts on top of which the whole realm of Functional Programming (of which Haskell is a torch-bearer!) is built, namely the concept of <em>functions, types,</em> and how they are beautifully represented by Haskell in their purest forms. Knowing these concepts properly leads one to experience <strong>Aha!</strong> moments and such sheer joy! After all, our lives should be filled with such Joys & Thrills of discovery!
+      </p>
 
-			<p>
-				To reiterate, this series of articles is <strong>NOT</strong> a set of Haskell Tutorials. Interested readers can consult the <a href="references">References</a> page for pointers regarding these. What I want to do here is try & share the subtle patterns & beauty in Haskell in particular, especially highlighting how they reflect the core mathematical ideas. If these "essays" could stoke the fire in you & your friends to plunge into the Pilgrimage to Haskell Heaven, I would be so happy indeed! And I'm sure that any such traveller will be rewarded with unforgettable "views" along the way!
-			</p>
+      <p>
+	To reiterate, this series of articles is <strong>NOT</strong> a set of Haskell Tutorials. Interested readers can consult the <a href="references">References</a> page for pointers regarding these. What I want to do here is try & share the subtle patterns & beauty in Haskell in particular, especially highlighting how they reflect the core mathematical ideas. If these "essays" could stoke the fire in you & your friends to plunge into the Pilgrimage to Haskell Heaven, I would be so happy indeed! And I'm sure that any such traveller will be rewarded with unforgettable "views" along the way!
+      </p>
 
-			<p>
-				<strong>Happy Journey!</strong> And Let's Get Started !!!
-			</p>
+      <p>
+	<strong>Happy Journey!</strong> And Let's Get Started !!!
+      </p>
 
-			<h2>Hello World</h2>
-			<p>
-				How about the "typical" program that prints "Hello World"? <br>
-				Well, here goes the code of such a program called <code>Hello.hs</code>:
-			</p>
-			<pre class="language-haskell line-numbers">
-				<code>
-						-- Hello.hs
-						main :: IO ()
-						main = print "Hello World"
-				</code>
-			</pre>
+      <h2>Hello World</h2>
+      <p>
+	How about the "typical" program that prints "Hello World"? <br>
+	Well, here goes the code of such a program called <code>Hello.hs</code>:
+      </p>
+      <pre class="language-haskell line-numbers">
+	<code>
+	  -- Hello.hs
+	  main :: IO ()
+	  main = print "Hello World"
+	</code>
+      </pre>
 
-			<p>
-				<strong>Note:</strong> Do <strong>not</strong> let the program-snippet syntax fool you about the I/O system of Haskell being "typical" in any way--especially if you are from an imperative programming language like Java, C++, etc.
-			</p>
+      <p>
+	<strong>Note:</strong> Do <strong>not</strong> let the program-snippet syntax fool you about the I/O system of Haskell being "typical" in any way--especially if you are from an imperative programming language like Java, C++, etc.
+      </p>
 
-			<p>
-				Haskell is one of the rare languages with an almost maniacal obsession about the concept of <em>purity</em>. In a programming language, <em>being pure</em> means that all side-effects are modelled explicitly, rather than being present in an invisible, unpredictable way.
-			</p>
+      <p>
+	Haskell is one of the rare languages with an almost maniacal obsession about the concept of <em>purity</em>. In a programming language, <em>being pure</em> means that all side-effects are modelled explicitly, rather than being present in an invisible, unpredictable way.
+      </p>
 
-			<p>
-				Please don't worry. We have a <strong>lot</strong> to speak about the features of Haskell in this space.
-			</p>
-			
-			<p>
-				So brace yourselves. You're in for a magical journey into <em>Haskell Heaven!!</em>
-			</p>
-		</main>
-		<!-- Load Prism.js for code highlighting -->
-		<script src="js/prism.js"></script>
-	</body>
+      <p>
+	Please don't worry. We have a <strong>lot</strong> to speak about the features of Haskell in this space.
+      </p>
+      
+      <p>
+	So brace yourselves. You're in for a magical journey into <em>Haskell Heaven!!</em>
+      </p>
+    </main>
+    <!-- Load Prism.js for code highlighting -->
+    <script src="js/prism.js"></script>
+  </body>
 </html>
