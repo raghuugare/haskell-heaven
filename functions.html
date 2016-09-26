@@ -12,195 +12,197 @@
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
   <title>Functions</title>
   <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    /* Reference: http://docs.mathjax.org/en/latest/options/SVG.html */
-    SVG: {
-      font: "TeX"
-      /* font: The possible values are TeX, STIX-Web, Asana-Math, Neo-Euler, Gyre-Pagella, Gyre-Termes and Latin-Modern. Default is "TeX" */
-    }
-  });
+   MathJax.Hub.Config({
+       /* Reference: http://docs.mathjax.org/en/latest/options/SVG.html */
+       SVG: {
+           font: "TeX"
+           /* font: The possible values are TeX, STIX-Web, Asana-Math, Neo-Euler, Gyre-Pagella, Gyre-Termes and Latin-Modern. Default is "TeX" */
+       }
+   });
   </script>
   <script type="text/javascript" async
-	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG">
+	        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG">
   </script>
 </head>
 <body>
-  <h3><a href="index.html">Back to home</a></h3>
-  <h2>Functions</h2>
+  <main>
+    <h3><a href="index.html">Back to home</a></h3>
+    <h2>Functions</h2>
 
-  <p>
-    Functions are the <em>raison d'être</em><sup><a href="#fn_01" id="ref_01">1</a></sup> of Functional Programming (Duh!). But it is very surprising to see that many people have some subtle mis-conceptions about the idea of a function, and this leads to difficulties later on while reasoning about functional programming ideas. It is therefore wise to spend some time &amp; effort towards getting a clear picture of functions.
-  </p>
+    <p>
+      Functions are the <em>raison d'être</em><sup><a href="#fn_01" id="ref_01">1</a></sup> of Functional Programming (Duh!). But it is very surprising to see that many people have some subtle mis-conceptions about the idea of a function, and this leads to difficulties later on while reasoning about functional programming ideas. It is therefore wise to spend some time &amp; effort towards getting a clear picture of functions.
+    </p>
 
-  <p>
-    Let us consider some familiar and not-so-familiar examples involving functions from various subjects.
-  </p>
-  <h3> Mathematics? Solve for \(x\) when \(ax^{2}+ bx + \ldots \) ??</h3>
-  <p>
-    Consider the famous Quadratic <em>equation</em> :
-  </p>
+    <p>
+      Let us consider some familiar and not-so-familiar examples involving functions from various subjects.
+    </p>
+    <h3> Mathematics? Solve for \(x\) when \(ax^{2}+ bx + \ldots \) ??</h3>
+    <p>
+      Consider the famous Quadratic <em>equation</em> :
+    </p>
 
-  <p class="math">
-    \( a x^{2} + b x + c = 0 \)
-  </p>
+    <p class="math">
+      \( a x^{2} + b x + c = 0 \)
+    </p>
 
-  <p>
-    The above equation states that some function of the <strong>independent variable</strong> \(x\) is equal to the <strong>expression</strong> \( {\mbox ax^{2} + bx + c }\) and that it evaluates to <em>zero</em> for <em>some</em> (input) values of \(x\) which are called the <strong>roots</strong> of the <em>equation</em>.<br>
-    Symbolically, we can write this as follows:
-  </p>
+    <p>
+      The above equation states that some function of the <strong>independent variable</strong> \(x\) is equal to the <strong>expression</strong> \( {\mbox ax^{2} + bx + c }\) and that it evaluates to <em>zero</em> for <em>some</em> (input) values of \(x\) which are called the <strong>roots</strong> of the <em>equation</em>.<br>
+      Symbolically, we can write this as follows:
+    </p>
 
-  <p class="math">
-    \(f(x) = ax^{2} + bx + c = 0 \)
-  </p>
+    <p class="math">
+      \(f(x) = ax^{2} + bx + c = 0 \)
+    </p>
 
-  <p>
-    Given the constants \(a\), \(b\), &amp; \(c\), we say that the above expression is a <em>function of</em> (=<em>dependent upon</em>) the (<em>independent</em>) variable "x". The <em>equation</em> simply gave us a <em>constraint</em> under which we would proceed to derive expressions for the <em>roots</em> for the given constants. In other words, the we wanted to know for what values of \(x\) does the function \(f(x)\) produce the value of \(0\) (zero), which are called the <em>roots</em> or <em>zeroes</em> of the function \(f(x)\).
-  </p>
+    <p>
+      Given the constants \(a\), \(b\), &amp; \(c\), we say that the above expression is a <em>function of</em> (=<em>dependent upon</em>) the (<em>independent</em>) variable "x". The <em>equation</em> simply gave us a <em>constraint</em> under which we would proceed to derive expressions for the <em>roots</em> for the given constants. In other words, the we wanted to know for what values of \(x\) does the function \(f(x)\) produce the value of \(0\) (zero), which are called the <em>roots</em> or <em>zeroes</em> of the function \(f(x)\).
+    </p>
 
-  <h3>Ok, how about Physics ?</h3>
-  <p> Or...do you remember the <em>equation</em> from the Physics of Motion describing the <strong>final velocity</strong> \(v\) of an object with an <strong>initial velocity</strong> of \(u\) units, moving under a <em>constant</em> <strong>acceleration</strong> of \( a \) units after a <strong>time</strong> \( t \) ??</p>
+    <h3>Ok, how about Physics ?</h3>
+    <p> Or...do you remember the <em>equation</em> from the Physics of Motion describing the <strong>final velocity</strong> \(v\) of an object with an <strong>initial velocity</strong> of \(u\) units, moving under a <em>constant</em> <strong>acceleration</strong> of \( a \) units after a <strong>time</strong> \( t \) ??</p>
 
-  <p class="math">
-    \( v = u + at \)
-  </p>
+    <p class="math">
+      \( v = u + at \)
+    </p>
 
-  <p><strong>Yes!</strong><br><br>
-    There <em>is</em> a function hidden here too. <br>
-    Given all things, the final velocity \( v \) is a function of time, and can be written as:
-  </p>
+    <p><strong>Yes!</strong><br><br>
+      There <em>is</em> a function hidden here too. <br>
+      Given all things, the final velocity \( v \) is a function of time, and can be written as:
+    </p>
 
-  <p class="math">
-    \(v(t) = u + at\)
-  </p>
+    <p class="math">
+      \(v(t) = u + at\)
+    </p>
 
-  <p>
-    Note that the final velocity is actually a function of not only the time, but also the other constants like the <strong>initial velocity</strong> \( u \) and the <strong>acceleration</strong> \(a\).
-    But usually, we consider only the variables.
-    Here, the <strong>time</strong> \( t \) is called the <strong>independent variable</strong> and the <strong>final velocity</strong> is called the <strong>dependent variable</strong>.
-    And in general, when scientists want to plot graphs of the relationship between such variables, the dependent variable is plotted on the y-axis and the independent variable is represented along the x-axis. This fits right in, since such a plot is represented as below:
-  </p>
+    <p>
+      Note that the final velocity is actually a function of not only the time, but also the other constants like the <strong>initial velocity</strong> \( u \) and the <strong>acceleration</strong> \(a\).
+      But usually, we consider only the variables.
+      Here, the <strong>time</strong> \( t \) is called the <strong>independent variable</strong> and the <strong>final velocity</strong> is called the <strong>dependent variable</strong>.
+      And in general, when scientists want to plot graphs of the relationship between such variables, the dependent variable is plotted on the y-axis and the independent variable is represented along the x-axis. This fits right in, since such a plot is represented as below:
+    </p>
 
-  <p class="math">
-    \( y = f (x) \)
-  </p>
+    <p class="math">
+      \( y = f (x) \)
+    </p>
 
-  <p class="math">
-    \( dependent\_variable = some\_function (independent\_variable) \)
-  </p>
-  
+    <p class="math">
+      \( dependent\_variable = some\_function (independent\_variable) \)
+    </p>
+    
 
-  <h3>What <em>is</em> a function then?</h3>
+    <h3>What <em>is</em> a function then?</h3>
 
-  <blockquote>A function \(f\) is simply a <strong>mapping</strong> from a set (called the <strong>domain</strong>) <em>to</em> another set, which is usually called the function's <strong>range</strong>.</blockquote>
+    <blockquote>A function \(f\) is simply a <strong>mapping</strong> from a set (called the <strong>domain</strong>) <em>to</em> another set, which is usually called the function's <strong>range</strong>.</blockquote>
 
-  <p>For example, the function represented by the mathematical expression \(x^{2}\) could be a mapping from the set of both positive & negative integers like \(\{\ldots,-3, -2, -1, 0, +1, +2, +3, \ldots\}\) to the set of positive integers that are perfect squares, such as \(\{0, +1, +4, +9, +16, \ldots\}\)</p>
+    <p>For example, the function represented by the mathematical expression \(x^{2}\) could be a mapping from the set of both positive & negative integers like \(\{\ldots,-3, -2, -1, 0, +1, +2, +3, \ldots\}\) to the set of positive integers that are perfect squares, such as \(\{0, +1, +4, +9, +16, \ldots\}\)</p>
 
-  <h3>So are functions exclusively for mathematical stuff ?? </h3>
+    <h3>So are functions exclusively for mathematical stuff ?? </h3>
 
-  <p>
-    <strong>No!</strong><br><br>
-    This is a major <em>myth</em> about functions among people trying to <em>grok</em> them.<br><br>
-    Consider the function that maps the name of a country to its capital city.
-    Such a function does not involve any math expressions.
-    But still, it is a perfectly valid example of what mathematicians would call a function.
-    Remember the <em>mapping</em> part of the definition above to remind you of what constitutes a function!
-  </p>
+    <p>
+      <strong>No!</strong><br><br>
+      This is a major <em>myth</em> about functions among people trying to <em>grok</em> them.<br><br>
+      Consider the function that maps the name of a country to its capital city.
+      Such a function does not involve any math expressions.
+      But still, it is a perfectly valid example of what mathematicians would call a function.
+      Remember the <em>mapping</em> part of the definition above to remind you of what constitutes a function!
+    </p>
 
-  <h3>Mathematical notation for a function</h3>
+    <h3>Mathematical notation for a function</h3>
 
-  <p>
-    In mathematics, a function is denoted as a <em>mapping</em> in symbolic form as below:<br><br>
+    <p>
+      In mathematics, a function is denoted as a <em>mapping</em> in symbolic form as below:<br><br>
 
-    <span class="math">\(f: D \rightarrow R\)</span><br> where \(D\) is the <strong>Domain</strong> and \(R\) is the <strong>Range</strong> of the function \(f\).
-  </p>
+      <span class="math">\(f: D \rightarrow R\)</span><br> where \(D\) is the <strong>Domain</strong> and \(R\) is the <strong>Range</strong> of the function \(f\).
+    </p>
 
-  <p>
-    In words, we could read this as, <blockquote>For every member of the set \(D\) given as the input, the function \(f\) provides a <strong>unique</strong> value that is a member of the set \(R\).</blockquote> That is, given the same input, we ought to get the same output from the mapping for it to qualify as a proper function.
-  </p>
+    <p>
+      In words, we could read this as, <blockquote>For every member of the set \(D\) given as the input, the function \(f\) provides a <strong>unique</strong> value that is a member of the set \(R\).</blockquote> That is, given the same input, we ought to get the same output from the mapping for it to qualify as a proper function.
+    </p>
 
-  <h3>Example: square</h3>
+    <h3>Example: square</h3>
 
-  <p>
-    Consider a function defined over the domain of integers which maps its inputs to their corresponding squares.
-  </p>
+    <p>
+      Consider a function defined over the domain of integers which maps its inputs to their corresponding squares.
+    </p>
 
-  <p>
-    Suppose we call this function \(square\).
-    We can obtain this "mapping" by simply multiplying any given integer with itself. Hence we can write the following:
-  </p>
+    <p>
+      Suppose we call this function \(square\).
+      We can obtain this "mapping" by simply multiplying any given integer with itself. Hence we can write the following:
+    </p>
 
-  <p class="math">\( square(x) = x^{2} \) </p>
+    <p class="math">\( square(x) = x^{2} \) </p>
 
-  <p>
-    Clearly, the function \( square \) provides a mapping (or a way?) from the set of all Integers to the set of Positive Integers that are perfect squares.
-  </p>
+    <p>
+      Clearly, the function \( square \) provides a mapping (or a way?) from the set of all Integers to the set of Positive Integers that are perfect squares.
+    </p>
 
-  <p>
-    2 things are to be noted here.
-  </p>
+    <p>
+      2 things are to be noted here.
+    </p>
 
-  <ol>
-    <li>
-      The function <strong>does not</strong> <em>square</em> its argument! In fact, a function never does anything to its argument(s). The argument(s) is/are simply used in providing the mapping value as per the function's name. The argument(s) may even be used to derive/calculate the mapping value <em>via</em> a mathematical expression, a table/database look-up, etc., but the key point is that the argument(s) is/are <strong>immutable</strong>. Examples are \(log, sine, cosine,\) etc.  
-    </li>
+    <ol>
+      <li>
+        The function <strong>does not</strong> <em>square</em> its argument! In fact, a function never does anything to its argument(s). The argument(s) is/are simply used in providing the mapping value as per the function's name. The argument(s) may even be used to derive/calculate the mapping value <em>via</em> a mathematical expression, a table/database look-up, etc., but the key point is that the argument(s) is/are <strong>immutable</strong>. Examples are \(log, sine, cosine,\) etc.  
+      </li>
 
-    <li>
-      Every time we give some value for \(x\), we obtain the <strong>same</strong> value from applying \(square(x)\). In other words, a function provides a unique, one-to-one mapping w.r.t. the elements in its Domain. Note that it is possible that there exist multiple elements in the Domain, which are mapped to the same value in the Range. But given some input, a function always gives the same value.
-    </li>
-  </ol>
+      <li>
+        Every time we give some value for \(x\), we obtain the <strong>same</strong> value from applying \(square(x)\). In other words, a function provides a unique, one-to-one mapping w.r.t. the elements in its Domain. Note that it is possible that there exist multiple elements in the Domain, which are mapped to the same value in the Range. But given some input, a function always gives the same value.
+      </li>
+    </ol>
 
-  <p>
-    We can thus denote \(square\) as below:
-  </p>
+    <p>
+      We can thus denote \(square\) as below:
+    </p>
 
-  <p class="math"> \( \mathbb{Z} \xrightarrow{square} \mathbb{Z}^{+} \)</p>
+    <p class="math"> \( \mathbb{Z} \xrightarrow{square} \mathbb{Z}^{+} \)</p>
 
-  <p> Here, \(\mathbb{Z}\) represents the set of Integers. Note how similar the above is to the <em>generic</em> definition of a function \(f \), which is below: </p>
+    <p> Here, \(\mathbb{Z}\) represents the set of Integers. Note how similar the above is to the <em>generic</em> definition of a function \(f \), which is below: </p>
 
-  <p class="math"> \( Domain \xrightarrow{f} Range \) </p>
+    <p class="math"> \( Domain \xrightarrow{f} Range \) </p>
 
-  <h3>Functions in Haskell</h3>
+    <h3>Functions in Haskell</h3>
 
-  <p>
-    Let us now see how Haskell brings the beauty of functions preserving the purity &amp; the rigor of the above concept.
-  </p>
+    <p>
+      Let us now see how Haskell brings the beauty of functions preserving the purity &amp; the rigor of the above concept.
+    </p>
 
-  <p>
-    Just see below how the function <code>square</code> is defined in Haskell:
-  </p>
+    <p>
+      Just see below how the function <code>square</code> is defined in Haskell:
+    </p>
 
-	<pre>
-		<code class="language-haskell line-numbers">
+	  <pre>
+		  <code class="language-haskell line-numbers">
     square:: Int -> Int
     square x = x * x
-		</code>
-	</pre>
+		  </code>
+	  </pre>
 
-  <p>
-		There are 2 parts to the above function <em>viz.,</em> <strong>type signature</strong> and the actual <strong>definition</strong> of the function.
-	</p>
+    <p>
+		  There are 2 parts to the above function <em>viz.,</em> <strong>type signature</strong> and the actual <strong>definition</strong> of the function.
+	  </p>
 
-	<p>
-    The first line is called the <strong>type signature</strong> of the function. In essence, it gives a high-level description as to what is the Domain &amp; the Range of the function. (sort of like the <strong>interface</strong> of the function)<br>
-    But wait! <br>
-    How can we represent a set in Haskell??
-  </p>
+	  <p>
+      The first line is called the <strong>type signature</strong> of the function. In essence, it gives a high-level description as to what is the Domain &amp; the Range of the function. (sort of like the <strong>interface</strong> of the function)<br>
+      But wait! <br>
+      How can we represent a set in Haskell??
+    </p>
 
-  <p>
-    The answer is	Types! <br>
-    A <strong>Type</strong> is used to represent a set of related values. In the above example, we have <code>Int</code> representing our mathematical set of Integers (\( \mathbb{Z} \)). And Haskell boasts of one of the best type-systems in modern programming languages.
-  </p>
+    <p>
+      The answer is	Types! <br>
+      A <strong>Type</strong> is used to represent a set of related values. In the above example, we have <code>Int</code> representing our mathematical set of Integers (\( \mathbb{Z} \)). And Haskell boasts of one of the best type-systems in modern programming languages.
+    </p>
 
-  <section class="footnotes">
-    <hr>
-    <sup id="fn_01">1.(<a href="http://www.merriam-webster.com/dictionary/raison%20d'%C3%AAtre" target="_blank">raison d'être</a>) &#9758; &quot;the most important reason or purpose for someone or something's existence.&quot;<a href="#ref_01" title="raison d'être">↩</a></sup>
-  </section>
-  
-  <!-- Load Prism.js for code highlighting -->
-  <script src="js/prism.js"></script>
+    <section class="footnotes">
+      <hr>
+      <sup id="fn_01">1.(<a href="http://www.merriam-webster.com/dictionary/raison%20d'%C3%AAtre" target="_blank">raison d'être</a>) &#9758; &quot;the most important reason or purpose for someone or something's existence.&quot;<a href="#ref_01" title="raison d'être">↩</a></sup>
+    </section>
+    
+    <!-- Load Prism.js for code highlighting -->
+    <script src="js/prism.js"></script>
+  </main>
 </body>
