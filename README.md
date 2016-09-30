@@ -2,7 +2,7 @@
 
 Welcome to a sweeping survey of Haskell Heaven !!! &lt;3 :)
 
-Here I am, trying to document my journey to this land, via my personal "snaps" of beautiful places in the vast landscape of Functional Heaven that is Haskell! 
+Here I am, trying to document my journey to this hallowed land, via my personal "snaps" of beautiful places in the vast landscape of Functional Heaven that is Haskell! 
 
 Like any travelogue, my wish/hope is that this rambling set of essays stokes an interest in fellow wanderers, to get a first-hand glimpse of Haskell Heaven that I so excitedly portray! 
 
@@ -17,3 +17,5 @@ There are many aspects of Haskell that stand out as pinnacles of research and ev
 + Purity, explicitly modeled side-effects
 + Strong expressive Type system with Type Inference
 + Many more...
+
+No wonder Functional Programming is gaining such traction in the industry too, from its initial origins in academic research.
