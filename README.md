@@ -12,7 +12,7 @@ _Bon Voyage!_
 
 There are many aspects of Haskell that stand out as pinnacles of research and evolution in Computer Science. Some of them are as below:
 
-+ Functions that mirror their mathematical counterparts
++ Functions that mirror their mathematical counterparts, with the default of no side-effects
 + Lazy evaluation
 + Purity, explicitly modeled side-effects
 + Strong expressive Type system with Type Inference
