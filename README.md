@@ -10,7 +10,7 @@ _Bon Voyage!_
 
 ## Salient features
 
-There are many aspects of Haskell that stand out as pinnacles of research and evolution in Computer Science. Some of them are as below:
+There are many aspects of Haskell that stand out as beautiful peaks of research and evolution in the confluence of Mathematics (Lambda Calculus, Category Theory, etc.) & Computer Science. Some of them are as below:
 
 + Functions that mirror their mathematical counterparts, with the default of no side-effects
 + Lazy evaluation
