@@ -19,4 +19,4 @@ There are many aspects of Haskell that stand out as beautiful peaks of research 
 + Strong expressive Type system with Type Inference
 + Many more...
 
-No wonder Functional Programming is gaining such traction in the industry too, from its initial origins in academic research, to real-world applications involving the solution of long-standing challenges in Computer Science.
+Functional Programming is gaining such traction in the industry too, from its initial origins in academic research, to real-world applications involving the solution of long-standing challenges in Computer Science.
