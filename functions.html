@@ -204,6 +204,7 @@
 
     <pre>
 		  <code class="language-haskell line-numbers">
+    -- | Function that computes the n'th Fibonacci number.
     fib:: Int -> Int
     fib 1 = 1
     fib 2 = 1
@@ -218,6 +219,7 @@
 
     <pre>
 		  <code class="language-haskell line-numbers">
+    -- | The classic Quicksort algorithm in the Haskell way.
     qsort:: [Int] -> [Int]
     qsort [] = []
     qsort (x:xs) = qsort    [y | y <- xs, y < x]
