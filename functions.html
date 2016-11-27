@@ -194,9 +194,42 @@
 
     <p>
       The answer is	Types! <br>
-      A <strong>Type</strong> is used to represent a set of related values. In the above example, we have <code>Int</code> representing our mathematical set of Integers (\( \mathbb{Z} \)). And Haskell boasts of one of the best type-systems in modern programming languages.
+      A <strong>Type</strong> is used to represent a set of related values. In the above example, we have <code>Int</code> representing our mathematical set of Integers (\( \mathbb{Z} \)). And Haskell boasts of one of the best type-systems in modern programming languages. We shall see about them next.
     </p>
 
+    <p>
+      Coming to the definition of a function in Haskell. Well, a function is defined in terms of a series of <em>equations</em>.<br/>
+      For example, consider a function to compute the n'th Fibonacci number.
+    </p>
+
+    <pre>
+		  <code class="language-haskell line-numbers">
+    fib:: Int -> Int
+    fib 1 = 1
+    fib 2 = 1
+    fib n = fib (n-1) + fib (n-2)
+		  </code>
+	  </pre>
+
+    <p>
+      That's all! Observer how succinctly the above equations "describe" the fibonacci number, unlike the imperative approach of how to compute the result. <br/>
+      Another classic example to illustrate this subtle-yet-major aspect is to show the Haskell implementation of the popular Quicksort algoritm for sorting a list of Ints (say).
+    </p>
+
+    <pre>
+		  <code class="language-haskell line-numbers">
+    qsort:: [Int] -> [Int]
+    qsort [] = []
+    qsort (x:xs) = qsort    [y | y <- xs, y < x]
+                   ++       [x]
+                   ++ qsort [y | y <- xs, y >= x] 
+		  </code>
+	  </pre>
+
+    <p>
+      The above 'gem' uses <em>pattern-matching</em> and <em>list-comprehensions</em> to beautifully describe how an unsorted list gets 'mapped' to its sorted version via the Quicksort algorithm.
+    </p>
+    
     <section class="footnotes">
       <hr>
       <sup id="fn_01">1.(<a href="http://www.merriam-webster.com/dictionary/raison%20d'%C3%AAtre" target="_blank">raison d'être</a>) &#9758; &quot;the most important reason or purpose for someone or something's existence.&quot;<a href="#ref_01" title="raison d'être">↩</a></sup>
