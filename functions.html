@@ -177,7 +177,7 @@
 
 	  <pre>
 		  <code class="language-haskell line-numbers">
-    square:: Int -> Int
+    square :: Int -> Int
     square x = x * x
 		  </code>
 	  </pre>
@@ -205,7 +205,7 @@
     <pre>
 		  <code class="language-haskell line-numbers">
     -- | Function that computes the n'th Fibonacci number.
-    fib:: Int -> Int
+    fib :: Int -> Int
     fib 1 = 1
     fib 2 = 1
     fib n = fib (n-1) + fib (n-2)
@@ -220,7 +220,7 @@
     <pre>
 		  <code class="language-haskell line-numbers">
     -- | The classic Quicksort algorithm in the Haskell way.
-    qsort:: [Int] -> [Int]
+    qsort :: [Int] -> [Int]
     qsort [] = []
     qsort (x:xs) = qsort    [y | y <- xs, y < x]
                    ++       [x]
