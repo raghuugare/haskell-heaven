@@ -59,10 +59,10 @@ header {
 }
 
 header h1 {
-		color: cornflowerblue;
+		color: blue;
 		font-size: 4.5em;
-		font-family: Athiti, Optima, sans-serif;
-		font-weight: 300;
+		font-family: "PT Mono", Athiti, Optima, sans-serif;
+		font-weight: 500;
 		letter-spacing: 0.01em;
 }
 
