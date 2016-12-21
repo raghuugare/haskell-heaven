@@ -18,6 +18,6 @@ There are many aspects of Haskell that stand out as beautiful peaks of research 
 + Purity! Side-effects in Functions are explicitly modeled, allowing separation of pure & impure code, thus helping reason about program correctness.
 + Strong expressive Type system with Type Inference
 + `Beautiful Concurrency' to borrow a phrase form Simon Peyton Jones
-+ Many more...
++ Many more features which will be explained here...
 
 Functional Programming is gaining such traction in the industry too, from its initial origins in academic research, to real-world applications involving the solution of long-standing challenges in Computer Science.
