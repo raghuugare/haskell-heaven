@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+apl+bash+c+csharp+cpp+coffeescript+ruby+css-extras+erlang+fsharp+git+go+haml+haskell+haxe+http+j+java+json+julia+latex+less+lua+makefile+markdown+matlab+nix+objectivec+ocaml+pascal+perl+processing+prolog+properties+protobuf+python+r+rust+sass+scss+scala+scheme+sql+swift+typescript+vim+yaml&plugins=line-highlight+line-numbers+show-invisibles+autolinker+wpd+custom-class+file-highlight+toolbar+jsonp-highlight+highlight-keywords+remove-initial-line-feed+previewer-base+previewer-color+previewer-gradient+previewer-easing+previewer-time+previewer-angle+autoloader+unescaped-markup+command-line+normalize-whitespace+keep-markup+data-uri-highlight+show-language+copy-to-clipboard */
+/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bro+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+puppet+pure+python+q+qore+r+jsx+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+verilog+vhdl+vim+wiki+xojo+yaml&plugins=line-highlight+line-numbers+autolinker+wpd+custom-class+file-highlight+toolbar+jsonp-highlight+highlight-keywords+remove-initial-line-feed+previewer-base+previewer-color+previewer-gradient+previewer-easing+previewer-time+previewer-angle+autoloader+command-line+normalize-whitespace+keep-markup+show-language+copy-to-clipboard */
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
@@ -306,39 +306,6 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
-.token.tab:not(:empty),
-.token.cr,
-.token.lf,
-.token.space {
-	position: relative;
-}
-
-.token.tab:not(:empty):before,
-.token.cr:before,
-.token.lf:before,
-.token.space:before {
-	color: hsl(24, 20%, 85%);
-	position: absolute;
-}
-
-.token.tab:not(:empty):before {
-    content: '\21E5';
-}
-
-.token.cr:before {
-    content: '\240D';
-}
-
-.token.crlf:before {
-    content: '\240D\240A';
-}
-.token.lf:before {
-    content: '\240A';
-}
-
-.token.space:before {
-	content: '\00B7';
-}
 .token a {
 	color: inherit;
 }
@@ -651,17 +618,6 @@ pre.code-toolbar > .toolbar span:focus {
 	stroke-width: 32;
 	stroke-dasharray: 0, 500;
 }
-/* Fallback, in case JS does not run, to ensure the code is at least visible */
-.lang-markup script[type='text/plain'],
-.language-markup script[type='text/plain'],
-script[type='text/plain'].lang-markup,
-script[type='text/plain'].language-markup {
-	display: block;
-	font: 100% Consolas, Monaco, monospace;
-	white-space: pre;
-	overflow: auto;
-}
-
 .command-line-prompt {
 	border-right: 1px solid #999;
 	display: block;
