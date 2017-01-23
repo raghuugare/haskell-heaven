@@ -4,8 +4,13 @@
 /* 		outline: 1px dotted red; */
 /* } */
 
-@charset "UTF-8";
+
 /* Custom fonts!! <3 */
+
+/* ------------------------------------------------ */
+/*  Computer Modern Serif !! <3 :)                  */
+/* ------------------------------------------------ */
+@charset "UTF-8";
 @font-face {
     font-family: 'CMU-Serif';
     font-style: normal;
@@ -33,6 +38,7 @@
     font-weight: bold;
     src: url(../fonts/computer_modern/Serif/cmunbi.ttf);
 }
+/* ----------------------------------------------------- */
 
 main {
 		margin: 0 auto;
