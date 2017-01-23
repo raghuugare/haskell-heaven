@@ -106,6 +106,40 @@
 }
 /* ---------------------------------------------------------- */
 
+/* ---------------------------------------------------------- */
+/*  Computer Modern 'Typewriter' (a mono-space font) !! <3 :) */
+/* ---------------------------------------------------------- */
+@charset "UTF-8";
+@font-face {
+    font-family: 'CMU-Typewriter';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/computer_modern/Typewriter/cmuntt.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Typewriter';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/computer_modern/Typewriter/cmuntb.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Typewriter';
+    font-style: italic;
+    font-weight: normal;
+    src: url(../fonts/computer_modern/Typewriter/cmunit.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Typewriter';
+    font-style: italic;
+    font-weight: bold;
+    src: url(../fonts/computer_modern/Typewriter/cmuntx.ttf);
+}
+/* ---------------------------------------------------------- */
+
+
 main {
 		margin: 0 auto;
 		padding: 0 10px;
