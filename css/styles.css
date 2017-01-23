@@ -227,7 +227,7 @@ header p {
 
 .math {
 		font-size: 1.4em;
-		color: steelblue;
+		color: #008b45; //  steelblue;
 }
 
 blockquote {
