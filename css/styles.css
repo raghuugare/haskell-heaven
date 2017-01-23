@@ -7,9 +7,9 @@
 
 /* Custom fonts!! <3 */
 
-/* ------------------------------------------------ */
-/*  Computer Modern Serif !! <3 :)                  */
-/* ------------------------------------------------ */
+/* --------------------------------------------------------- */
+/*  Computer Modern Serif !! <3 :)                           */
+/* --------------------------------------------------------- */
 @charset "UTF-8";
 @font-face {
     font-family: 'CMU-Serif';
@@ -38,7 +38,73 @@
     font-weight: bold;
     src: url(../fonts/computer_modern/Serif/cmunbi.ttf);
 }
-/* ----------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+/* --------------------------------------------------------- */
+/*  Computer Sans 'Bright' !! <3 :)                           */
+/* --------------------------------------------------------- */
+@charset "UTF-8";
+@font-face {
+    font-family: 'CMU-Bright';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/computer_modern/Bright/cmunbmr.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Bright';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/computer_modern/Bright/cmunbbx.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Bright';
+    font-style: italic;
+    font-weight: normal;
+    src: url(../fonts/computer_modern/Bright/cmunbmo.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Bright';
+    font-style: italic;
+    font-weight: bold;
+    src: url(../fonts/computer_modern/Serif/cmunbxo.ttf);
+}
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+/*  Computer Modern 'Bright' (a sans serif font) !! <3 :)     */
+/* ---------------------------------------------------------- */
+@charset "UTF-8";
+@font-face {
+    font-family: 'CMU-Bright';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/computer_modern/Bright/cmunbmr.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Bright';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/computer_modern/Bright/cmunbbx.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Bright';
+    font-style: italic;
+    font-weight: normal;
+    src: url(../fonts/computer_modern/Bright/cmunbmo.ttf);
+}
+
+@font-face {
+    font-family: 'CMU-Bright';
+    font-style: italic;
+    font-weight: bold;
+    src: url(../fonts/computer_modern/Serif/cmunbxo.ttf);
+}
+/* ---------------------------------------------------------- */
 
 main {
 		margin: 0 auto;
