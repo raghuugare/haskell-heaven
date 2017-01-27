@@ -158,6 +158,12 @@ body {
 
 h1,
 h2,
+h3 {
+    font-family: 'CMU-Bright', Optima, sans-serif;
+}
+
+h1,
+h2,
 h3,
 strong {
 		color: #333;
