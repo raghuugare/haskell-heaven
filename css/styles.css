@@ -202,9 +202,9 @@ header {
 }
 
 header h1 {
-		color: blue;
+		color: seagreen; 
 		font-size: 4.5em;
-		font-family: "CMU-Serif", "PT Mono", Athiti, Optima, sans-serif;
+		font-family: "CMU-Typewriter", Athiti, Optima, sans-serif;
 		font-weight: 500;
 		letter-spacing: 0.01em;
 }
