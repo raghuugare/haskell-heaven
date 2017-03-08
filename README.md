@@ -6,8 +6,6 @@ Here I am, trying to document my journey to this hallowed land, via my personal 
 
 Like any travelogue, my wish/hope is that this rambling set of essays stokes an interest in fellow wanderers, to get a first-hand glimpse of Haskell Heaven that I so excitedly portray! 
 
-_Bon Voyage!_
-
 ## Salient features
 
 There are many aspects of Haskell that stand out as beautiful peaks of research and evolution in the confluence of Mathematics (Lambda Calculus, Category Theory, etc.) & Computer Science. Some of them are as below:
