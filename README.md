@@ -1,6 +1,6 @@
 # Haskell Heaven
 
-Welcome to a sweeping survey of Haskell Heaven !!! &lt;3 :)
+Welcome to a sweeping survey of Haskell Heaven ! :)
 
 Here I am, trying to document my journey to this hallowed land, via my personal "snaps" of beautiful places in the vast landscape of Functional Heaven that is Haskell! 
 
