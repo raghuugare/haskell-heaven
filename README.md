@@ -10,10 +10,10 @@ Like any _travelogue_, my wish/hope is that this rambling set of essays stokes a
 
 There are many aspects of Haskell that stand out as beautiful peaks of research and evolution in the confluence of Mathematics (Lambda Calculus, Category Theory, etc.) & Computer Science. Some of them are as below:
 
-+ Functions that mirror their mathematical counterparts, with the default of no side-effects
-+ Inspiration from Category Theory, which aims to subsume all of Set Theory, with a programming language--no mean feat indeed! Haskell thus has many concepts from Category Theory like _Functors, Monads, Monoids, Arrows_, etc. Most of Haskell's staple of concepts have a sound mathematical foundation, unlike other programming languages which compromised rigor for various reasons.
-+ Lazy evaluation, which allows working with infinite data structures and provides great support for _modularity_.
-+ Purity! Side-effects in Functions are explicitly modeled, allowing separation of pure & impure code, thus helping reason about program correctness.
++ _Functions_ that mirror their mathematical counterparts, with the default of no side-effects
++ Inspiration from Category Theory, which aims to subsume all of Set Theory, with a programming language--no mean feat indeed! Haskell thus has many concepts from _Category Theory_ like _Functors, Monads, Monoids, Arrows_, etc. Most of Haskell's staple of concepts have a sound mathematical foundation, unlike other programming languages which compromised rigor for various reasons.
++ _Lazy evaluation_. This allows working with infinite data structures and provides great support for _modularity_.
++ _Purity_. Side-effects in Functions are explicitly modeled, allowing separation of pure & impure code, thus helping reason about program correctness.
 + A very expressive type system with powerful type inference built in.
 + `Beautiful Concurrency' to borrow a phrase form Simon Peyton Jones
 + Many more features which will be explained here...
