@@ -15,10 +15,10 @@ There are many aspects of Haskell that stand out as beautiful peaks of research 
 + _Lazy evaluation_. This allows working with infinite data structures and provides great support for _modularity_.
 + _Purity_. Side-effects in Functions are explicitly modeled, allowing separation of pure & impure code, thus helping reason about program correctness.
 + A very expressive type system with powerful type inference built in.
-+ `Beautiful Concurrency' to borrow a phrase form Simon Peyton Jones
-+ Many more features which will be explained here...
++ _'Beautiful Concurrency'_, to borrow a phrase from one of the designers of Haskell, Simon Peyton Jones.
++ Many more features which will be explored here...
 
-Functional Programming is gaining such traction in the industry too, from its initial origins in academic research, to real-world applications involving the solution of long-standing challenges in Computer Science.
+Functional Programming is gaining a lot of traction in the industry too, from its initial origins in academic research, to real-world applications.
 
 Sample this for a Hello-World pogram:
 
