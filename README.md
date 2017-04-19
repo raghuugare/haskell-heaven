@@ -19,11 +19,3 @@ There are many aspects of Haskell that stand out as beautiful peaks of research 
 + Many more features which will be explored here...
 
 Functional Programming is gaining a lot of traction in the industry too, from its initial origins in academic research, to real-world applications.
-
-Sample this for a Hello-World pogram:
-
-``` python
-print("Hello World!")
-```
-
-That's  all!
