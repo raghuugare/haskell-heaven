@@ -2,7 +2,7 @@
 
 Welcome to a sweeping survey of Haskell Heaven ! :)
 
-Here I am, trying to document my journey to this hallowed land, via my personal "snaps" of beautiful places in the vast landscape of Functional Heaven that is Haskell! 
+Here I am, trying to document my journey to (& around...) this hallowed land, via my personal "snaps" & blogs about beautiful vistas in the vast landscape of Functional Heaven that is Haskell.
 
 Like any _travelogue_, my wish/hope is that this rambling set of essays & articles stokes an interest in fellow wanderers, to get a first-hand glimpse of Haskell Heaven that I so excitedly portray! 
 
