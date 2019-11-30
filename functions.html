@@ -215,7 +215,8 @@
     </pre>
 
     <p>
-      That's all! Observe how succinctly the above equations "describe" the Fibonacci number. <br/>
+      That's all!<br/><br/>
+      Observe how succinctly the above equations "describe" the Fibonacci number. <br/>
       Another classic example to illustrate this subtle-yet-major aspect is to show the Haskell implementation of the popular Quicksort algorithm for sorting a list of Ints (say).
     </p>
 
@@ -226,7 +227,7 @@
     qsort [] = []
     qsort (x:xs) = qsort lesser ++ [x] ++ qsort greater
                    where
-                       lesser =  [y | y <- xs, y <= x] -- elemnts less or equal to x
+                       lesser =  [y | y <- xs, y <= x] -- elements less or equal to x
                        greater = [y | y <- xs, y > x]  -- elements greater than x
 	</code>
     </pre>
