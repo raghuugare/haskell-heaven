@@ -226,8 +226,8 @@
     qsort [] = []
     qsort (x:xs) = qsort lesser ++ [x] ++ qsort greater
                    where
-                       lesser =  [y | y <- xs, y <= x]
-                       greater = [y | y <- xs, y > x] 
+                       lesser =  [y | y <- xs, y <= x] -- elemnts less or equal to x
+                       greater = [y | y <- xs, y > x]  -- elements greater than x
 	</code>
     </pre>
 
