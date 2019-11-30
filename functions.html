@@ -224,10 +224,10 @@
     -- | A simple version of Quicksort -- the Haskell way.
     qsort :: [Int] -> [Int]
     qsort [] = []
-    qsort (x:xs) = qsort lesser ++ [x] ++ greater
+    qsort (x:xs) = qsort lesser ++ [x] ++ qsort greater
                    where
-                       lesser = [y | y <- xs, y <= x]
-                        greater [y | y <- xs, y > x] 
+                       lesser =  [y | y <- xs, y <= x]
+                       greater = [y | y <- xs, y > x] 
 	</code>
     </pre>
 
